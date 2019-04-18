@@ -1,0 +1,23 @@
+{
+  "name": "single-spa-esm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-app-1": "rollup -c src/app-1/rollup.config.js",
+    "build-app-2": "rollup -c src/app-2/rollup.config.js",
+    "build-all": "npm-run-all -p build-app-1 build-app-2",
+    "start": "static -p 8080 -a 0.0.0.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "single-spa-react": "^2.9.0",
+    "systemjs": "^3.1.2"
+  },
+  "devDependencies": {
+    "node-static": "^0.7.11",
+    "npm-run-all": "^4.1.5",
+    "rollup": "^1.0.0"
+  }
+}

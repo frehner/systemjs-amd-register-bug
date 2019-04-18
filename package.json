@@ -7,7 +7,7 @@
     "build-app-1": "rollup -c src/app-1/rollup.config.js",
     "build-app-2": "rollup -c src/app-2/rollup.config.js",
     "build-all": "npm-run-all -p build-app-1 build-app-2",
-    "start": "static -p 8080 -a 0.0.0.0"
+    "start": "static -p 8080 -a localhost"
   },
   "author": "",
   "license": "ISC",

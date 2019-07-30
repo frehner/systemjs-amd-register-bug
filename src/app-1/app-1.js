@@ -1,3 +1,1 @@
-import {thisIsFalse} from 'app-2'
-
-console.log(thisIsFalse, "this is false from app-2")
+export const app1Value = {test: 'hi'}

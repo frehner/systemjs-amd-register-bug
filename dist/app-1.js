@@ -1,5 +1,9 @@
-define(['app-2'], function (app2) { 'use strict';
+define(['exports'], function (exports) { 'use strict';
 
-	console.log(app2.thisIsFalse, "this is false from app-2");
+	const app1Value = {test: 'hi'};
+
+	exports.app1Value = app1Value;
+
+	Object.defineProperty(exports, '__esModule', { value: true });
 
 });
